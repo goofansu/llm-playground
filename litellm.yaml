@@ -1,0 +1,19 @@
+model_list:
+  - model_name: "gpt-4o"
+    litellm_params:
+      model: "openrouter/openai/gpt-4o"
+      api_base: "https://openrouter.ai/api/v1"
+      api_key: "os.environ/OPENROUTER_API_KEY"
+
+litellm_settings:
+  callbacks: ["arize_phoenix"]
+
+general_settings:
+  master_key: "sk-1234"
+  database_url: "postgresql://james:111111@127.0.0.1:5432/litellm"
+  store_prompts_in_spend_logs: true
+
+environment_variables:
+  LITELLM_SALT_KEY: "my-great-salt"
+  PHOENIX_COLLECTOR_ENDPOINT: "http://localhost:4317"
+  PHOENIX_COLLECTOR_HTTP_ENDPOINT: "http://localhost:6006/v1/traces"
