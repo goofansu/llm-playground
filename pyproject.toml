@@ -10,6 +10,7 @@ dependencies = [
     "litellm[proxy]>=1.63.12",
     "llm-openrouter>=0.4",
     "mistral>=19.0.0",
+    "mlx-whisper>=0.4.2",
     "ollama>=0.4.7",
     "prisma>=0.15.0",
     "smartfunc>=0.2.0",
