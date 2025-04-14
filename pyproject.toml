@@ -11,7 +11,6 @@ dependencies = [
     "llm-gemini>=0.17",
     "llm-openrouter>=0.4",
     "llm-sentence-transformers>=0.3.1",
-    "mistral>=19.0.0",
     "mlx-whisper>=0.4.2",
     "prisma>=0.15.0",
     "smartfunc>=0.2.0",
