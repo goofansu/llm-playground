@@ -1,18 +1,11 @@
 # llm-playground
 
 ## Requirements
-```shell
-brew install uv
-```
+- uv ([Install](https://docs.astral.sh/uv/getting-started/installation/))
 
 ## Install
 ```shell
+gh repo clone goofansu/llm-playground
 cd llm-playground
-cp .env.example .env
 uv sync
-```
-
-## LiteLLM proxy server
-```shell
-uv run --env-file.env litellm --config litellm/config.yaml --detailed_debug
 ```
